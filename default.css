@@ -1,0 +1,169 @@
+﻿body {
+    overflow-y: scroll;
+    //background-color: rgb(193,193,193);
+    background-color: rgb(215,215,215);
+}
+
+
+header {
+        background-color: rgb(148,148,148);
+        //border-bottom: 5px solid rgb(130,130,130);
+        //display: grid;
+        //grid-template-columns: 400px 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:stretch;
+        
+}
+nav {
+    display:flex;
+    //justify-content:space-between;
+    //align-content:stretch;
+    justify-content:center;
+    flex: 1 auto;
+    align-content: stretch;
+    flex-wrap:wrap;
+    
+}
+h1 {
+    color: rgb(230,230,230);
+    font-family: Trebuchet MS;
+    font-size:50px;  
+}
+
+.pressurespike {
+   
+    top: 3rem;
+    left: 5%;
+}
+#pressurespike {
+    padding-top: 25px;
+    padding-right: 100px;
+}
+
+main {
+    color: rgb(50,50,50);
+    margin-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+
+footer {
+    background-color: rgb(140,140,140);
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-top: 5px solid rgb(120,120,120);
+    
+}
+#formcalc {
+    display: flex;
+}
+
+#formcalc2 {
+    display: flex;
+}
+
+#formcalc3 {
+    display:flex;
+}
+
+#formcalc4 {
+    display: flex;
+}
+
+#formcalc5 {
+    display: flex;
+}
+
+#formcalc6 {
+    display: flex;
+}
+
+#formcalc7 {
+    display: flex;
+}
+#formcalc8 {
+    display: flex;
+}
+#formcalc9 {
+    display: flex;
+}
+#formcalc10 {
+    display: flex;
+}
+#formcalc11 {
+    display: flex;
+}
+#formcalc12 {
+    display: flex;
+}
+#formcalc13 {
+    display: flex;
+}
+#formcalc14 {
+    display: flex;
+}
+.textbox {
+    width: 125px;
+}
+.button1 {
+    background-color: rgb(110,110,110);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    //padding: 15px 4.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button2 {
+    background-color: rgb(110,110,110);
+    border: none;
+    color: white;
+   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   cursor: pointer;
+}
+/*.button3 {
+    background-color: rgb(100,100,100);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button4 {
+    background-color: rgb(100,100,100);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}*/
+#button1 {
+    
+}
+#button2 {
+    
+}
+#button3 {
+    
+}
+#button4 {
+   
+}
+#button5 {
+   
+}

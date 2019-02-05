@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pascals Law</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <meta name="author" content="Alex F. Kaprosy" />
+    <link href="css/default.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images/PressureSpike2.PNG" alt="Pressure Spike" id="pressurespike" />
+        <h1 id="hydcalc">Hydraulic Calculator</h1>
+
+    </header>
+    <nav>
+        <div id="button1"><a href="formulashub.html"><button class="button1"> Home </button></a></div>
+        <div id="button2"><a href="cylindervelocity.html"><button class="button1"> Cylinder Velocity Formulas</button></a></div>
+        <div id="button3"><a href="motortorque.html"><button class="button1"> Motor Torque Formulas</button></a></div>
+        <div id="button4"><a href="fluiddynamics.html"><button class="button1">Inlet Conditions</button> </a></div>
+        <div id="button5"><a href="pumpformulas.html"><button class="button1">Pump Formulas</button></a></div>
+    </nav>
+    <script src="pascal.js"></script>
+    <main>
+
+        <h2>Fluid Power Foundations</h2>
+        <h3><b>Pascals Law(F = P x A) -</b><i> Pressure applied on a confined fluid is applied equally, in all directions, with equal force on all equal areas</i></h3>
+        <!--Calculate force-->
+        <form name="formcalc2" id="formcalc2">
+            Enter pressure(psi): <input type="text" name="txtpress" placeholder="Enter a number">
+            Enter Area(in<sup>2</sup>): <input type="text" name="txtarea" placeholder="Enter a number">
+            Force(lbs) = <input type="text" name="txtforce" placeholder="Enter a number">
+            <input type="button" value="Calculate" click="force()" placeholder="" class="button2">
+
+        </form>
+        <br>
+        <!-- Calculate pressure-->
+        <form name="formcalc3" id="formcalc3">
+            Enter Force(lbs): <input type="text" name="txtforce" placeholder="Enter a number">
+            Enter Area(in<sup>2</sup>): <input type="text" name="txtarea" placeholder="Enter a number">
+            Pressure(psi) = <input type="text" name="txtpress" placeholder="Enter a number">
+            <input type="button" value="Calculate" click="pressure()" placeholder="" class="button2">
+        </form>
+        <br>
+        <!-- Calculate force-->
+        <form name="formcalc4" id="formcalc4">
+            Enter Force(lbs): <input type="text" name="txtforce" placeholder="Enter a number">
+            Enter Pressure(psi): <input type="text" name="txtpress" placeholder="Enter a number">
+            Area(in<sup>2</sup>) = <input type="text" name="txtarea" placeholder="Enter a number">
+            <input type="button" value="Calculate" click="area()" placeholder="Enter a number" class="button2">
+        </form>
+        <br>
+        <!--Calculate area of a cylinder-->
+        <h4>Calculate area of a cylinder(Area = diameter<sup>2</sup> x .7854)</h4>
+        <form name="formcalc5" id="formcalc5">
+            Enter diameter(inches): <input type="text" name="txtdia" placeholder="Enter a number">
+            Area(in<sup>2</sup>) = <input type="text" name="txtarea" placeholder="Enter a number">
+            <input type="button" value="Calculate" click="areacyl()" placeholder="Enter a number" class="button2">
+        </form>
+        <br />
+        <h4>Calculate annular area of a cylinder(Bore - Rod Area)</h4>
+        <form name="formcalc8" id="formcalc8">
+            Enter bore diameter(inches): <input type="text" name="txtboredia" placeholder="Enter a number">
+            Enter rod diameter(inches): <input type="text" name="txtroddia" placeholder="Enter a number">
+            Annular Area(in<sup>2</sup>) = <input type="text" name="txtannarea" placeholder="Enter a number">
+            <input type="button" value="Calculate" click="annareacyl()" class="button2">
+        </form>
+        <br>
+
+    </main>
+
+
+
+
+</body>
+</html>

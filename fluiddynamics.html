@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Inlet Conditions</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <meta name="author" content="Alex F. Kaprosy" />
+    <link href="css/default.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images/PressureSpike2.PNG" alt="Pressure Spike" id="pressurespike" />
+        <h1 id="hydcalc">Hydraulic Calculator</h1>
+
+    </header>
+    <nav>
+    <a href="formulashub.html"><button class="button1" type="button">Home</button></a>
+    <a href="pascal.html"><button class="button1" type="button">Pascals Law Formulas</button></a>
+    <a href="motortorque.html"><button class="button1" type="button">Motor Torque Formulas</button></a>
+    <a href="cylindervelocity.html"> <Button class="button1" type="button">Cylinder Velocity Formulas</Button></a>
+    <a href="pumpformulas.html"><button class="button1" class="button1">Pump Formulas</button></a>
+        </nav>
+    <script src="fluiddynamics.js"></script>
+    <main>
+
+
+
+        <!--Fluid dynamics section-->
+        <h2>Inlet Conditions</h2>
+        <h3>Head(Inlet pressure<sub>psig</sub> = Specific Gravity x .433<sub>psi/ft</sub>H<sub>2</sub>O)</h3>
+        <p>Understanding factors that affect fluid weight is critical for ensuring adequete pump inlet conditions.</p>
+        <!--User inputs positive head and specific gravity in text field. Result is displayed in Gauge Pressure Generated from Positive Head text box-->
+        <h3>Calculate Pressure Generated from Positive Head</h3>
+        <form name="formcalc" id="formcalc">
+            Enter Positive Head(ft): <input type="text" name="txtposhead" placeholder="Enter a number">
+            Enter Specific Gravity: <input type="text" name="txtspecgrav" placeholder="Enter a number">
+            Gauge pressure generated from Positive head(psi):<input type="text" name="txtres" placeholder="">
+
+            <input type="button" value="Calculate" click="inletpressure()" class="button2">
+        </form>
+
+
+    </main>
+
+
+
+
+</body>
+</html>

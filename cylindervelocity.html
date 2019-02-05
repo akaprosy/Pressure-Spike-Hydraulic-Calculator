@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cylinder Formulas</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <meta name="author" content="Alex F. Kaprosy" />
+    <link href="css/default.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images/PressureSpike2.PNG" alt="Pressure Spike" id="pressurespike" />
+        <h1 id="hydcalc">Hydraulic Calculator</h1>
+
+    </header>
+    <nav>
+    <a href="formulashub.html"><button class="button1" type="button">Home</button></a>
+    <a href="pascal.html"><button class="button1" type="button">Pascals Law Formulas</button></a>
+    <a href="motortorque.html"><button class="button1" type="button">Motor Torque Formulas</button></a>
+    <a href="fluiddynamics.html"><button class="button1" type="button">Inlet Conditions</button></a>
+    <a href="pumpformulas.html"><button  class="button1">Pump Formulas</button></a>
+        </nav>
+    <script src="cylindervelocity.js"></script>
+    <main>
+
+
+        <h2>Cylinder Velocity formulas</h2>
+
+        <!--Find velocity given stroke and time-->
+        <h3>Find velocity for a cylinder(Velocity<sub>in/min</sub> = Stroke<sub>in</sub> x (60<sub>sec/min</sub> / Time<sub>sec</sub>)</h3>
+        <form name="formcalc6" id="formcalc6">
+            Enter Stroke(inches): <input type="text" name="txtstroke" class="textbox" placeholder="Enter a number">
+            Enter Time(inches): <input type="text" name="txttime" class="textbox" placeholder="Enter a number">
+            Velocity(in/min) = <input type="text" name="txtvelocity" class="textbox" placeholder="Enter a number">
+            <input type="button" value="Calculate" click="velocityone()" class="button2">
+        </form>
+
+        <!--Find velocity given flow and area-->
+        <h3>Find cylinder velocity(Velocity<sub>in/min</sub> = (Flow<sub>gpm</sub> x 231) / Area<sub>in<sup>2</sup></sub>)</h3>
+        <form name="formcalc7" id="formcalc7">
+            Enter Flow(gpm): <input type="text" name="txtflow" class="textbox" placeholder="Enter a number">
+            Area(in<sup>2</sup>): <input type="text" name="txtarea" class="textbox" placeholder="Enter a number">
+            Velocity(in/min) = <input type="text" name="txtvelocity" class="textbox" placeholder="Enter a number">
+            <input type="button" value="Calculate" click="velocitytwo()" class="button2">
+        </form>
+        <br />
+        <!--Flow requirement, cylinder extending-->
+        <h3>Find flow requirement for cylinder extending(Flow<sub>gpm</sub> = (Velocity<sub>in/min</sub> * Area<sub>in<sup>2</sup></sub>)/231)</h3>
+        <form name="formcalc9" id="formcalc9">
+            Enter velocity(in/min): <input type="text"  name="txtvelocity" class="textbox" placeholder="Enter a number" />
+            Enter bore diameter(inches): <input type="text" name="txtbore" class="textbox" placeholder="Enter a number"/>
+            Flow requirement(gpm)= <input type="text" name="txtflow" class="textbox" placeholder="Enter a number"/>
+            <input type="button" value="Calculate" click="flowreqext()" class="button2">
+        </form>
+        <br />
+        <!--Flow requirement, cylinder retracting-->
+        <h3>Find flow requirement for cylinder retracting(Flow<sub>gpm</sub> = (Velocity<sub>in/min</sub> * Area<sub>in<sup>2</sup></sub>)/231)</h3>
+        <form name="formcalc10" id="formcalc10">
+            Enter velocity(in/min): <input type="text" name="txtvelocity" class="textbox" placeholder="Enter a number"/>
+            Enter bore diameter(inches): <input type="text" name="txtbore" class="textbox" placeholder="Enter a number"/>
+            Enter rod diameter(inches): <input type="text" name="txtroddia" class="textbox" placeholder="Enter a number"/>
+            Flow requirement(gpm)= <input type="text" name="txtflow" class="textbox" placeholder="Enter a number"/>
+            <input type="button" value="Calculate" click="flowreqret()" class="button2"/>
+        </form>
+        
+
+
+
+    </main>
+
+
+
+
+</body>
+</html>

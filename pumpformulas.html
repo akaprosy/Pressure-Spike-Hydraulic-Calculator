@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pump Formulas</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <meta name="author" content="Alex F. Kaprosy" />
+    <link href="css/default.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images/PressureSpike2.PNG" alt="Pressure Spike" id="pressurespike" />
+        <h1 id="hydcalc">Hydraulic Calculator</h1>
+
+    </header>
+    <nav>
+    <a href="formulashub.html"><button class="button1" type="button">Home</button></a>
+    <a href="cylindervelocity.html"> <Button class="button1" type="button">Cylinder Velocity Formulas</Button></a>
+    <a href="pascal.html"><button class="button1" type="button">Pascals Law Formulas</button></a>
+    <a href="fluiddynamics.html"><button class="button1" type="button">Inlet Conditions</button></a>
+    <a href="motortorque.html"><button class="button1"> Motor Torque Formulas</button></a>
+</nav>
+
+    <script src="pumpformulas.js"></script>
+    <main>
+        <h2>Pump formulas</h2>
+        <h2>Calculate Horse Power</h2>
+        <h3>Horsepower = (Pressure x flow)/1714</h3>
+
+        <form name="formcalc11" id="formcalc11">
+            Enter Pressure(psi): <input type="text" name="txtpress" placeholder="Enter a number">
+            Enter Flow(gpm): <input type="text" name="txtflow" placeholder="Enter a number">
+            Horsepower = <input type="text" name="txthp">
+            <input type="button" value="Calculate" click="horsepower()" placeholder="">
+
+        </form>
+        <h2>Calculate pump flow given displacement and rpm</h2>
+        <h3>Flow = Displacement<sub>cir</sub> * rpm</h3>
+
+        <form name="formcalc15" id="formcalc15">
+            Enter Displacement(cir) : <input type="text" name="txtdisplacement" placeholder="Enter a number">
+            Enter rpm: <input type="text" name="txtrpm" placeholder="Enter a number">
+            Pump Flow(gpm)= <input type="text" name="txtflow">
+            <input type="button" value="Calculate" click="pumpflow()" placeholder="">
+
+        </form>
+
+    </main>
+
+
+
+
+</body>
+</html>
